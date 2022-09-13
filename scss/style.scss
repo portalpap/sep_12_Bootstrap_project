@@ -1,7 +1,14 @@
+$primary-color :rgb(139,55,255); 
+$text-color-dark: #333;
+$text-color-light: invert($text-color-dark);
+
+*{
+    font-weight: 700;
+}
 .carousel{
     background-color: #333;
     height: 40rem;
-    color: invert(#333);
+    color: $text-color-light;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +21,65 @@
 }
 .t1{
     font-size: 60px;
+    color: $primary-color;
+    span{
+        color: $text-color-light;
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #333;
+    height: 4rem;
+    background-color: white;
+}
+li{
+    height: 4rem;
+    align-self: center;
+    transition: .3s;
+    padding: 1.25rem 3px;
+    text-align: center;
+    min-width: 16.6%;
+    &:hover{
+        color: $text-color-light;
+        background-color: $text-color-dark;
+        transform: translateY(-4px);
+        box-shadow: 0px 0px 0px 4px white;
+    }
 }
 .t2{
-    font-size: 22px;
+    font-size: 24px;
 }
 .t3{
-    font-size: 15px;
+    font-size: 20px;
 }
-.row{
-    margin-bottom: 4em;
+.btn{
+    background-color: $primary-color;
+    border: none;
+    border: 100px solid darken($primary-color, 10%);
+    border-radius: 2em !important;
+}
+.btn:hover{
+    background-color: darken($primary-color, 5%);
+    overflow-y: hidden;
+    color: rgb(234, 224, 237);
+    box-shadow: 0px 0px 0px 4px darken($primary-color, 40%);
+}
+.hero{
+    color: invert(#333);
+    background-image: url(/images/Background.jpg);
+    background-position: center;
+    height: 45em;
+    background-size: cover;
+
+    #hback{
+        background-color: rgba(0, 0, 0, 0.651);
+    }
+}
+.p0{
+    opacity: .8;
+}
+.p1{
+    font-weight: 700;
 }

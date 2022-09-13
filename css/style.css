@@ -1,3 +1,7 @@
+* {
+  font-weight: 700;
+}
+
 .carousel {
   background-color: #333;
   height: 40rem;
@@ -17,18 +21,75 @@
 
 .t1 {
   font-size: 60px;
+  color: rgb(139, 55, 255);
+}
+.t1 span {
+  color: #cccccc;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #333;
+  height: 4rem;
+  background-color: white;
+}
+
+li {
+  height: 4rem;
+  align-self: center;
+  transition: 0.3s;
+  padding: 1.25rem 3px;
+  text-align: center;
+  min-width: 16.6%;
+}
+li:hover {
+  color: #cccccc;
+  background-color: #333;
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 0px 4px white;
 }
 
 .t2 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .t3 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
-.row {
-  margin-bottom: 4em;
+.btn {
+  background-color: rgb(139, 55, 255);
+  border: none;
+  border: 100px solid #6d04ff;
+  border-radius: 2em !important;
+}
+
+.btn:hover {
+  background-color: #7c1eff;
+  overflow-y: hidden;
+  color: rgb(234, 224, 237);
+  box-shadow: 0px 0px 0px 4px #2d006a;
+}
+
+.hero {
+  color: #cccccc;
+  background-image: url(/images/Background.jpg);
+  background-position: center;
+  height: 45em;
+  background-size: cover;
+}
+.hero #hback {
+  background-color: rgba(0, 0, 0, 0.651);
+}
+
+.p0 {
+  opacity: 0.8;
+}
+
+.p1 {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
